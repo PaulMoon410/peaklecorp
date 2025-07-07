@@ -43,7 +43,12 @@
     "@tanstack/react-query": "^5.8.0",
     "zustand": "^4.4.0",
     "date-fns": "^2.30.0",
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "@hiveio/dhive": "^1.2.6",
+    "hive-keychain": "^1.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.0.4"
   },
   "_commentedDependencies": {
     "note": "The following dependencies are temporarily commented out until PeakeCorp/Hive functionality is fully implemented",

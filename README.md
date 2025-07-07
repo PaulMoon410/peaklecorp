@@ -1,8 +1,53 @@
 # PeakeCorp: Enterprise Blockchain Operations Platform
 
-**The Essential Corporate Blockchain Infrastructure Every Business Needs**
+**🚧 DEVELOPMENT STATUS: PROOF OF CONCEPT / MVP**
 
-Transform your company's blockchain operations with the industry's most comprehensive corporate blockchain management platform. Built for Fortune 500 companies and growing enterprises who demand reliability, compliance, and operational efficiency in their daily blockchain workflows.
+> **Important Notice**: This is currently a development prototype focusing on UI/UX design and architecture planning. The features described below represent the planned enterprise vision. For current implementation status, see the "Implementation Status" section.
+
+## 🏗️ **Current Implementation Status**
+
+### ✅ **COMPLETED (Ready for Demo)**
+- ✅ Modern React/Next.js UI framework
+- ✅ Responsive dashboard with Tailwind CSS
+- ✅ Component architecture for enterprise modules
+- ✅ Sample data visualization with Recharts
+- ✅ Basic navigation and layout structure
+- ✅ GitHub deployment workflow setup
+
+### 🚧 **IN DEVELOPMENT (Core Features)**
+- 🚧 HiveKeychain wallet integration
+- 🚧 Real Hive blockchain API connections
+- 🚧 PeakeCoin rewards calculation engine
+- 🚧 Batch transaction processing logic
+- 🚧 Resource Credits optimization algorithms
+
+### 📋 **PLANNED (Enterprise Features)**
+- 📋 ERP system integrations (SAP/Oracle/QuickBooks)
+- 📋 Automated compliance reporting
+- 📋 Role-based access control
+- 📋 Real-time audit trail generation
+- 📋 Advanced cost optimization algorithms
+- 📋 Multi-signature corporate wallet support
+
+### ⏰ **TIMELINE ESTIMATE**
+- **MVP with Hive Integration**: 2-4 weeks
+- **Basic Enterprise Features**: 2-3 months  
+- **Full Enterprise Platform**: 6-12 months
+
+## 🎯 **Current Demo Capabilities**
+
+**What you can see now:**
+- Professional corporate UI/UX design
+- Dashboard with treasury analytics mockups
+- Workflow management interface concepts
+- Batch transaction planning interface
+- Corporate reporting dashboard prototypes
+
+**What requires development:**
+- All blockchain functionality
+- Real transaction processing
+- Actual cost savings calculations
+- Enterprise system integrations
 
 ## 🏢 Why Every Corporation Needs PeakeCorp
 
