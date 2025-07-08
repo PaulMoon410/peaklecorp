@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  peakecorp-enterprise:
+    build:
+      context: .
+      dockerfile: Dockerfile.pi
+    container_name: peakecorp-enterprise
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_HIVE_RPC_ENDPOINT=https://api.hive.blog
+      - NEXT_PUBLIC_HIVE_ENGINE_RPC=https://api.hive-engine.com/rpc
+      - NEXT_PUBLIC_PEAKECOIN_SYMBOL=PEAKE
+      - NEXT_PUBLIC_APP_NAME=PeakeCorp Enterprise
+      - NEXT_PUBLIC_CORPORATE_MODE=true
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+    restart: unless-stopped
+    networks:
+      - peakecorp-network
+
+  # Optional: Add Redis for session storage
+  redis:
+    image: redis:7-alpine
+    container_name: peakecorp-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - peakecorp-network
+
+  # Optional: Add PostgreSQL for enterprise data
+  postgres:
+    image: postgres:15-alpine
+    container_name: peakecorp-postgres
+    environment:
+      POSTGRES_DB: peakecorp
+      POSTGRES_USER: peakecorp
+      POSTGRES_PASSWORD: your_secure_password_here
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - peakecorp-network
+
+networks:
+  peakecorp-network:
+    driver: bridge
+
+volumes:
+  redis_data:
+  postgres_data:
